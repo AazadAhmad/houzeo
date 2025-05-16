@@ -1,0 +1,235 @@
+html{
+    scroll-behavior: smooth;
+}
+*,
+:after,
+:before {
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: 400;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+header .bg-dark{
+    background-color: #fff !important;
+    padding: 0 2%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+header .nav-link{
+    color: #000;
+    font-size: 14px;
+    padding: 25px 12px;
+}
+header  span.time{
+    font-size: 11px;
+    display: block;
+    padding: 0 10px;
+    margin-top: -25px;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #0B5AA5;
+}
+.navbar-nav .dropdown-menu{
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+.dropdown-item{
+    padding: 5px 10px;
+    font-size: 13px;
+}
+.dropdown-item:hover, .dropdown-item.active, .dropdown-item:active{
+    color: #fff;
+    background-color:#0B5AA5 ;
+}
+.start-btn{
+    color: #fff;
+    background: #0E5293;
+    background: linear-gradient(280deg,rgba(14, 82, 147, 1) 0%, rgba(40, 118, 193, 1) 100%);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.navbar-toggler {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    flex-shrink: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse.collapse:not(.show) {
+        display: block;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #212529;
+        width: 215px;
+        height: 100%;
+        z-index: 9999;
+        padding: 25px;
+        transform: translateX(-215px);
+        transition: 0.5s ease-in-out;
+        display: block;
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0px);
+    }
+
+    .nav-overlay {
+        position: absolute;
+        background: #0000007d;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        transform: translateX(-100vw);
+        transition: 0.5s ease-in-out;
+        display: block;
+    }
+
+    .nav-overlay.active {
+        transform: translateX(0);
+    }
+}
+
+/* Hover dropdowns on desktop only */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+
+
+.card {
+    border-radius: 15px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.heading {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 10px;
+}
+
+.heading p {
+    font-size: 16px;
+    background: #fff;
+    padding: 8px 16px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 18px;
+    color: #212529;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+.swiper-pagination {
+    padding: 5px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 1.2em;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.5;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.house-sale {
+    border: 1px #000 solid;
+}
+
+.house-sale span {
+    width: 12px;
+    height: 12px;
+    background: green;
+}
+
+.amount,
+.house-d strong {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3557d9;
+}
+
+.house-d strong {
+    font-size: 14px;
+}
