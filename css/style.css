@@ -94,6 +94,27 @@ header  span.time{
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color:#0B5AA5;
 }
+/* 
+.sticky{
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: -100px;
+    left: 0;
+    right: 0;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    z-index: 999;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+header.sticky .bg-dark{
+    border: none;
+} */
 
 .desktop-hidden{
     display: none;
@@ -133,12 +154,22 @@ header  span.time{
 
 .search-btn {
     position: absolute;
-    right: 5px;
-    background: none;
+    right: 10px;
     border: none;
     cursor: pointer;
+    background: #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
 }
-
+.search-btn img{
+    width: 14px;
+}
+.search-wrapper:focus-within .search-btn {
+    background-color: #0E5293;
+    transform: scale(1.1);
+}
 .close-btn {
     position: absolute;
     right: 50px;
@@ -181,7 +212,7 @@ select.form-select:hover, select.form-select:focus{
     fill: #000;
     transition: 0.5s;
 }
-.filter:hover svg path{
+.filter:hover svg path, .filter:focus svg path{
     fill: #0B5AA5;
 }
 button:last-child{
@@ -327,7 +358,7 @@ select.sort-by:hover, select.sort-by:focus{
 }
 
 .amount{
-    font-size: 17px;
+    font-size: 16px;
 }
 .amount,
 .house-d strong {
@@ -342,9 +373,12 @@ select.sort-by:hover, select.sort-by:focus{
     color: #000;
 }
 .house-d span {
-    font-size: 12px;
-    padding-left: 4px;
+    font-size: 11px;
+    padding-left: 3px;
     color: rgba(0, 0, 0, 0.5);
+}
+.caption{
+    padding:0 15px;
 }
 .caption > p:first-of-type {
     font-weight: 500;
@@ -360,14 +394,63 @@ select.sort-by:hover, select.sort-by:focus{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 99;
     background-color: #fff;
     height: 100vh; 
     overflow: hidden;
 }
+@media only screen and (min-device-width:1536px) and (max-device-width:2560px) {
+    body{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+    h5{
+        font-size: 24px;
+    }
+    header .nav-link{
+        font-size: 17px;
+    }
+    header span.time{
+        font-size: 13px;
+    }
+    .form-control {
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        font-size: 17px;
+        height: 60px;
+    }
+    
+    .search-btn {
+        right: 15px;
+        width: 35px;
+        height: 35px;
+    }
+    .search-btn img {
+        width: 16px;
+    }
+    select.form-select{
+        font-size: 17px;
+        height: 60px;
+    }
+    .caption{
+        padding:0 25px;
+    }
+    .heading p {
+        padding: 10px 18px;
+    }
+    .card p{
+        font-size: 16px;
+    }
+    .amount {
+        font-size: 22px;
+    }
+    .house-d span {
+        font-size: 16px;
+    }
 
-
-
+}
+    
 @media screen and (max-width: 991px) {
     h5{
         font-size: 16px;
@@ -388,11 +471,11 @@ select.sort-by:hover, select.sort-by:focus{
         top: 0;
         left: 0;
         background: #f9f9f9;
-        width: 250px;
+        width: 300px;
         height: 100%;
         z-index: 9999;
         padding: 0px;
-        transform: translateX(-270px);
+        transform: translateX(-320px);
         transition: 0.5s ease-in-out;
         display: block;
         box-shadow: 0 10px 20px 0px rgb(0 0 0 / 8%);
@@ -536,9 +619,9 @@ select.sort-by:hover, select.sort-by:focus{
         width: 100%;
         padding:60px 15px 25px 15px;
         border-radius: 15px 15px 0 0;
-        box-shadow: 0 4px 10px 0px rgb(0 0 0 / 8%);
-        -webkit-box-shadow: 11px 8px 75px 50px rgb(0 0 0 / 27%);
-        -moz-box-shadow: 0 4px 10px 0px rgb(0 0 0 / 8%);
+       box-shadow: 0 10px 20px 0px rgb(0 0 0 / 8%);
+        -webkit-box-shadow: 0 10px 20px 0px rgb(0 0 0 / 8%);
+        -moz-box-shadow: 0 10px 20px 0px rgb(0 0 0 / 8%);
         transform: translateY(100%);
         transition: 0.5s ease-in-out;
     }
@@ -561,6 +644,9 @@ select.sort-by:hover, select.sort-by:focus{
         top: 20px;
         width: 15px;
     }
+    /* .sticky{
+        height: 100%;
+    } */
     
 
 }

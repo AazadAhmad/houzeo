@@ -1,3 +1,15 @@
+
+// $(window).scroll(function () {
+
+//     // sticky Header
+//     var scroll = $(window).scrollTop();
+//     if (scroll >= 35) {
+//         $("header").addClass("sticky");
+//     } else {
+//         $("header").removeClass("sticky");
+
+//     } 
+// });
 document.addEventListener("click", function (event) {
   const navbar = document.querySelector(".navbar-collapse");
   const toggler = document.querySelector(".navbar-toggler");
