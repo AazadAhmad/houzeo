@@ -221,7 +221,7 @@ select.sort-by{
     color: #0B5AA5;
     background: url(../img/arrow-down-blue.svg) center right 10px no-repeat;
     width: auto;
-    padding-right: 1.5em !important;
+    padding-right: 2em !important;
 }
 select.sort-by:hover, select.sort-by:focus{
     border: none;
@@ -231,11 +231,12 @@ select.sort-by:hover, select.sort-by:focus{
 .card {
     border-radius: 15px;
     border: none;
-    box-shadow: -1px -1px 21px 0px rgba(0,0,0,0.10);
-    -webkit-box-shadow: -1px -1px 21px 0px rgba(0,0,0,0.10);
-    -moz-box-shadow: -1px -1px 21px 0px rgba(0,0,0,0.10);
+    box-shadow: -1px -1px 15px 0px rgba(0,0,0,0.10);
+    -webkit-box-shadow: -1px -1px 15px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: -1px -1px 15px 0px rgba(0,0,0,0.10);
     border-radius: 15px;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .swiper {
@@ -284,9 +285,11 @@ select.sort-by:hover, select.sort-by:focus{
     fill: #f00;
 }
 .heading svg {
-    animation: pulse 1.2s infinite ease-in-out;
     transform-origin: center;
     width: 40px;
+}
+.heading svg:hover {
+    animation: pulse 1.2s infinite ease-in-out;
 }
 @keyframes pulse {
     0% {
@@ -385,6 +388,12 @@ select.sort-by:hover, select.sort-by:focus{
 }
 .house-d span strong {
     font-size: 14px;
+}
+.card:hover{
+    box-shadow: -1px -1px 30px 0px rgba(0,0,0,0.40);
+    -webkit-box-shadow: -1px -1px 30px 0px rgba(0,0,0,0.40);
+    -moz-box-shadow: -1px -1px 30px 0px rgba(0,0,0,0.40);
+    transition: 0.5;
 }
 
 .map-s {
