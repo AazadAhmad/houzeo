@@ -159,12 +159,9 @@ header.sticky .bg-dark{
     cursor: pointer;
     background: #000;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     transition: 0.5s;
-}
-.search-btn img{
-    width: 14px;
 }
 .search-wrapper:focus-within .search-btn {
     background-color: #0E5293;
