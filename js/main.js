@@ -1,26 +1,23 @@
 
-// $(window).scroll(function () {
+$(window).scroll(function () {
 
-//     // sticky Header
-//     var scroll = $(window).scrollTop();
-//     if (scroll >= 35) {
-//         $("header").addClass("sticky");
-//     } else {
-//         $("header").removeClass("sticky");
+  var scroll = $(window).scrollTop();
+    if (scroll >= 35) {
+        $("header").addClass("sticky");
+    } else {
+        $("header").removeClass("sticky");
 
-//     } 
-// });
+    } 
+});
 document.addEventListener("click", function (event) {
   const navbar = document.querySelector(".navbar-collapse");
   const toggler = document.querySelector(".navbar-toggler");
 
-  // If menu is open and click is outside navbar and toggler
   if (
     navbar.classList.contains("show") &&
     !navbar.contains(event.target) &&
     !toggler.contains(event.target)
   ) {
-    // Collapse the navbar
     const bsCollapse = bootstrap.Collapse.getInstance(navbar);
     bsCollapse.hide();
   }
@@ -47,12 +44,8 @@ $(document).ready(function () {
     $(this).toggleClass("active");
   });
 
-  // $(".navbar-toggler-icon").on("click", function () {
-  //   $("body").addClass("body-overlay");
-  // });
   $(".close-menu").on("click", function () {
     $(".navbar-collapse").removeClass("show");
-    // $("body").removeClass("body-overlay");
   });
 
   const $input = $("#searchInput");

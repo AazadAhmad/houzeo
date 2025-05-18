@@ -94,7 +94,7 @@ header  span.time{
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color:#0B5AA5;
 }
-/* 
+
 .sticky{
     background: #fff;
     position: fixed;
@@ -114,7 +114,7 @@ header  span.time{
 }
 header.sticky .bg-dark{
     border: none;
-} */
+}
 
 .desktop-hidden{
     display: none;
@@ -231,9 +231,9 @@ select.sort-by:hover, select.sort-by:focus{
 .card {
     border-radius: 15px;
     border: none;
-    box-shadow: -1px -1px 15px 0px rgba(0,0,0,0.10);
-    -webkit-box-shadow: -1px -1px 15px 0px rgba(0,0,0,0.10);
-    -moz-box-shadow: -1px -1px 15px 0px rgba(0,0,0,0.10);
+    box-shadow: -1px -1px 10px 0px rgba(0,0,0,0.10);
+    -webkit-box-shadow: -1px -1px 10px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: -1px -1px 10px 0px rgba(0,0,0,0.10);
     border-radius: 15px;
     overflow: hidden;
     transition: 0.5s;
@@ -390,16 +390,16 @@ select.sort-by:hover, select.sort-by:focus{
     font-size: 14px;
 }
 .card:hover{
-    box-shadow: -1px -1px 30px 0px rgba(0,0,0,0.40);
-    -webkit-box-shadow: -1px -1px 30px 0px rgba(0,0,0,0.40);
-    -moz-box-shadow: -1px -1px 30px 0px rgba(0,0,0,0.40);
+    box-shadow: -1px -1px 15px 0px rgba(0,0,0,0.30);
+    -webkit-box-shadow: -1px -1px 15px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: -1px -1px 15px 0px rgba(0,0,0,0.30);
     transition: 0.5;
 }
 
 .map-s {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 70px;
     z-index: 99;
     background-color: #fff;
     height: 100vh; 
@@ -478,7 +478,7 @@ select.sort-by:hover, select.sort-by:focus{
         left: 0;
         background: #f9f9f9;
         width: 300px;
-        height: 100%;
+        height: 100vh;
         z-index: 9999;
         padding: 0px;
         transform: translateX(-320px);
@@ -649,6 +649,7 @@ select.sort-by:hover, select.sort-by:focus{
         right: 20px;
         top: 20px;
         width: 15px;
+        height: 15px;
     }
     /* .sticky{
         height: 100%;
