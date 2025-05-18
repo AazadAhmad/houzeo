@@ -538,10 +538,10 @@ select.sort-by:hover, select.sort-by:focus{
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     }
     header .nav-link.pt-0 {
-        padding: 5px 15px !important;
+        padding: 15px !important;
     }
     header span.time {
-        margin-top: 5px;
+        margin-top: 0;
         padding: 0 15px;
     }
     .dropdown-toggle::after{
@@ -620,12 +620,12 @@ select.sort-by:hover, select.sort-by:focus{
         background: #ffffff;
         z-index: 999;
         width: 100%;
-        padding:60px 15px 25px 15px;
+        padding: 60px 15px 25px 15px;
         border-radius: 15px 15px 0 0;
-       box-shadow: 0 10px 20px 0px rgb(0 0 0 / 8%);
-        -webkit-box-shadow: 0 10px 20px 0px rgb(0 0 0 / 8%);
-        -moz-box-shadow: 0 10px 20px 0px rgb(0 0 0 / 8%);
-        transform: translateY(100%);
+        box-shadow: 0 -10px 10px 0px rgb(0 0 0 / 8%);
+        -webkit-box-shadow: 0 -10px 10px 0px rgb(0 0 0 / 8%);
+        -moz-box-shadow: 0 -10px 10px 0px rgb(0 0 0 / 8%);
+        transform: translateY(110%);
         transition: 0.5s ease-in-out;
     }
     .mobile-filter.show-filter {
@@ -633,14 +633,28 @@ select.sort-by:hover, select.sort-by:focus{
     }
     .mobile-filter button:last-child{
         border: 1px solid rgba(0, 0, 0, 0.2);
-        background: #fff;
-        color: #000;
+        background: #0b5aa5;
+        color: #fff;
         width: auto;
         margin-left: 0;
     }
-    .mobile-filter .filter svg path{
-        fill: #000;
+    .mobile-filter button:last-child:hover, .mobile-filter button:last-child:focus{
+        border: 1px #0B5AA5 solid;
+        background: #F3F7FA;
+        color: #0B5AA5;
     }
+
+    .mobile-filter .filter svg path{
+        fill: #fff;
+    }
+    .mobile-filter .filter:hover svg path{
+        fill: #0B5AA5;
+    }
+    /* .filter:hover, .filter:focus {
+        border: 1px #0B5AA5 solid;
+        background: #F3F7FA;
+        color: #0B5AA5;
+    } */
     .close_btn{
         position: absolute;
         right: 20px;
