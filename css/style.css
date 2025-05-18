@@ -524,9 +524,6 @@ select.sort-by:hover, select.sort-by:focus{
         width: 20px;
         height: 20px;
     }
-    .close-menu img{
-        width: 100%;
-    }
     header .nav-link{
         padding: 10px 15px;
         position: relative;
