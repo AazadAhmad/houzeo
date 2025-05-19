@@ -1,4 +1,4 @@
-# houzeo UI-Developer test
+# Houzeo Ui-Developer Test
 
 HTML Frame work : Bootstrap 5
 Plugin use for slider : Swiper
