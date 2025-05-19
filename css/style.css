@@ -319,6 +319,13 @@ select.sort-by:hover, select.sort-by:focus{
     color: #000000;
     font-weight: 700;
 }
+.swiper-button-next:after {
+    margin-right: -3px
+}
+.swiper-button-prev:after {
+    margin-left: -3px;
+}
+
 
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled, 
